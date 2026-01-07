@@ -83,4 +83,13 @@ public class Prodotto {
     public String getNomeCompleto() {
         return codice + "-" + nome;
     }
+
+    @Override
+    public String toString() {
+        return "Codice: " + codice +
+                " - Nome: " + nome +
+                " - Descrizione: " + descrizione +
+                " - Prezzo con IVA: " + getPrezzoConIva();
+    }
+
 }
